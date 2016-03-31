@@ -1,0 +1,8 @@
+<div class="center">
+	<div>This is the Work Queue</div>
+	<input ng-model="search" type="text"><br>
+	<ul>
+		<li ng-repeat="result in workJSON | filter:search">{{result}}</li>
+	</ul>
+	<pre>{{workJSON}}</pre>
+</div>
